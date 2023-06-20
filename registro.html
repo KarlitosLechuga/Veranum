@@ -15,10 +15,66 @@
       <div id="navbarContainer"></div>
       </div>
       <br><br><br><br><br>
-      <div class="container-fluid">
-      <h1>Test</h1>
-      <h2>texto de prueba 2</h2>
-    </div>
+
+
+
+
+      <main class="center-screen">
+        <div class="container">
+          <section class="text-center">
+            <h1>Registro de cliente</h1>
+            <br>
+            <form class="row g-3 needs-validation" action="" id="formulario1">
+              <div class="container-fluid">
+                <div class="row">
+                  <!-- Campos del registro de usuario -->
+                  <div class="col">
+                    <div class="mb-3 fw-bold">
+                      <label for="id_txtRut">RUT</label>
+                      <input type="text" name="txtrut" class="form-control" id="txtrut" placeholder="Ingrese su Rut" pattern="\d{1,8}-\d{1}" title="El formato debe ser 12345678-9"/>
+                    </div>
+
+                    <div class="mb-3 fw-bold">
+                      <label for="nombres" class="form-label">Nombres</label>
+                      <input type="text" name="txtnombre" placeholder="Escriba sus Nombres" class="form-control" id="txtnombre" >
+                    </div>
+
+                    <div class="mb-3 fw-bold">
+                      <label for="Apellidos" class="form-label" >Apellidos</label>
+                      <input type="text" name="txtapellido" placeholder="Escriba sus Apellidos" class="form-control" id="txtapellido" >
+
+                    </div>
+
+                    <div class="mb-3 fw-bold">
+                      <label for="correo" class="form-label">Correo</label>
+                      <input type="text" name="txtcorreo"placeholder="ejemplo@gmail.com" class="form-control" id="txtcorreo" aria-describedby="emailHelp">
+                    </div>
+
+
+                    <div class="mb-3 fw-bold">
+                      <label for="correo" class="form-label">Contraseña </label>
+                      <td><input type="password" name="txtcontrasena" class="form-control"  placeholder="Ingrese Contraseña" id="txtcontrasena"></td>
+                    </div>
+
+                    <div class="mb-3 fw-bold">
+                      <label for="correo" class="form-label">Repita Contraseña </label>
+                    <td><input type="password" name="txtrepetircontrasena" class="form-control" placeholder="Ingrese nuevamente Contraseña" id="txtrepetircontrasena" />
+                    </div>
+
+                    <div class="mb-3 fw-bold">
+                      <label for="direccion" class="form-label">Dirección</label>
+                      <textarea rows="4" name="txtdireccion" type="text" class="form-control" id="txtdireccion"></textarea>
+                    </div>
+
+                </div>
+              </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+
+
     <br><br><br><br><br>
       <!--FOOTER-->
       <div id="footerContainer"></div>
