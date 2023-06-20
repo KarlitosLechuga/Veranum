@@ -1,11 +1,19 @@
 body{
     background:  linear-gradient( #1ABC9C,purple,red);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 
 footer {
 	background-color: #4f3c3c;
 	padding: 20px;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
   }
 
 
