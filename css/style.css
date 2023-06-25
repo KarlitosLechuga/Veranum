@@ -78,4 +78,8 @@ footer {
 	  width: 100%;
 	}
   }
+
+  label.error {
+    color: red;
+  }
   
