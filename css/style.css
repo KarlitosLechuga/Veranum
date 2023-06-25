@@ -1,5 +1,5 @@
 body{
-    background:  linear-gradient( #1ABC9C,purple,red);
+    background:  white;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -62,5 +62,20 @@ footer {
   .footer-section ul li  a:hover {
 	color: #000;
 	text-decoration: underline;
+  }
+
+  .ubicacion-imagen {
+	width: 50%;
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
+  }
+  .espacio-entre-imagenes {
+	clear: both;
+  }
+  @media (max-width: 767px) {
+	.ubicacion-imagen {
+	  width: 100%;
+	}
   }
   
