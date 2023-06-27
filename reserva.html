@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veranum - Reserva</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--Barra de Navegación-->
+        <div id="navbarContainer"></div>
+        </div>
+        <br><br><br><br><br>
+
+        <!-- titulo -->
+        <h1>Reserva</h1>
+        <br>
+
+        <!-- formulario de reserva -->
+    
+        <div class="container-fluid">
+            <!-- datos de reserva -->
+            <div class="row">
+                <!-- datos del cliente -->
+                <div class="col-sm-12 col-md-6" id="datos">
+                  <form method="POST" id="formulario1" action="recibir_datos">
+                    <select class="form-select" aria-label="Default select example">
+                        <label for="categoria" class="form-label">Categoría</label>
+                          <option selected>Hotel 1</option>
+                          <option value="1">Hotel 2</option>
+                        </select>
+                    <div class="invalid_feedback"></div>
+                    <div class="form-group">
+                        <br>
+                        <label for="texto">Rut</label>
+                        <input
+                          type="text"
+                          id="texto"
+                          name="texto"
+                          class="form-control"
+                          placeholder=""
+                          value=""
+                        />
+                      </div>
+                    <div class="form-group">
+                      <br>
+                      <label for="texto">Nombre</label>
+                      <input
+                        type="text"
+                        id="texto"
+                        name="texto"
+                        class="form-control"
+                        placeholder=""
+                        value=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <br>
+                      <label for="texto">Apellidos</label>
+                      <input
+                        type="text"
+                        id="texto"
+                        name="texto"
+                        class="form-control"
+                        placeholder=""
+                        value=""
+                      />
+                    </div>
+                    <div class="form-group">
+                      <br>
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Ingrese su email aquí"
+                        value="correo@gmail.com"
+                      />
+                    </div>
+                    <div class="form-group">
+                        <br>
+                        <label for="email">Número de teléfono</label>
+                        <input
+                          type="text"
+                          id="texto"
+                          name="texto"
+                          class="form-control"
+                          placeholder="Ingrese su número aquí"
+                          value="+569 "
+                        />
+                      </div>
+                    <div class="form-group">
+                        <br>
+                        <label for="texto">Fecha</label>
+                        <input
+                          type="text"
+                          id="texto"
+                          name="texto"
+                          class="form-control"
+                          placeholder=""
+                          value=""
+                        />
+                      </div>
+                      <br>
+                      <select class="form-select" aria-label="Default select example">
+                        <label for="categoria" class="form-label">Categoría</label>
+                          <option selected>Estándar</option>
+                          <option value="1">Premium</option>
+                          <option value="2">Vip</option>
+                          <option value="3">Super Vip</option>
+                        </select>
+                        <br>
+                    <div class="invalid_feedback"></div>
+                    <select class="form-select" aria-label="Default select example">
+                        <label for="categoria" class="form-label">Categoría</label>
+                          <option selected>1</option>
+                          <option value="1">2</option>
+                          <option value="2">3</option>
+                          <option value="3">4</option>
+                        </select>
+                    <div class="invalid_feedback"></div>
+                    <div class="mb-3">
+                      <label for="direccion" class="form-label">Dirección</label>
+                      <textarea placeholder="" class="form-control" id="direccion"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Usar promoción</label>
+                      <div id="formchHelp" class="form-text">Deseo usar una promoción, deberá ingresar un código a continuación.</div>
+                    </div>
+                  </form>
+                    
+                </div>
+
+                <!-- Comprobante -->
+                <div class="col-sm-12 col-md-6" id="foto">
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlFile1">Ingrese foto de Carnet
+                      </label>
+                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                  </form>
+                </div>
+            </div>
+            <!-- botones -->
+            <div class="row" id="botones">
+                <div class="col text-center">
+                  <button type="submit" class="btn btn-primary">Guardar</button>
+                  <button type="reset" class="btn btn-primary">Limpiar</button>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <!--FOOTER-->
+         <div id="footerContainer"></div>
+    
+        <script>
+            fetch('menu-header.html')
+          .then(function(response) {
+            return response.text();
+          })
+          .then(function(newNavbarContent) {
+            // Reemplaza el div por el menu
+            var navbarContainer = document.getElementById('navbarContainer');
+            navbarContainer.innerHTML = newNavbarContent;
+          });
+          
+          // Recupera el footer
+          fetch('menu-footer.html')
+          .then(function(response) {
+            return response.text();
+          })
+          .then(function(newFooterContent) {
+            // Reemplaza el div por el footer
+            var footerContainer = document.getElementById('footerContainer' );
+            footerContainer.innerHTML = newFooterContent;
+          });</script>
+</body>
+</html>
